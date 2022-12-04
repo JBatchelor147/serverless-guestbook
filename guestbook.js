@@ -6,7 +6,7 @@ const apiUrl = https://us-east.functions.appdomain.cloud/api/v1/web/64afab3b-688
   get() {
     return $.ajax({
       type: 'GET',
-      url: `${apiUrl}/read-guestbook-entry-sequence.json`,
+      url: `https://us-east.functions.appdomain.cloud/api/v1/web/64afab3b-688d-4dac-b339-d109cb46b59e/guestbook/read-guestbook-entry-sequence.json`,
       dataType: 'json'
     });
   },
@@ -15,7 +15,7 @@ const apiUrl = https://us-east.functions.appdomain.cloud/api/v1/web/64afab3b-688
     console.log('Sending', name, email, comment)
     return $.ajax({
       type: 'PUT',
-      url: `${apiUrl}/save-guestbook-entry-sequence.json`,
+      url: `https://us-east.functions.appdomain.cloud/api/v1/web/64afab3b-688d-4dac-b339-d109cb46b59e/guestbook/save-guestbook-entry-sequence.json`,
       contentType: 'application/json; charset=utf-8',
       data: JSON.stringify({
         name,
