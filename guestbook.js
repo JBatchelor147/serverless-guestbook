@@ -1,7 +1,7 @@
 /**
  * Web application
  */
-const apiUrl = 'https://us-east.functions.appdomain.cloud/api/v1/web/64afab3b-688d-4dac-b339-d109cb46b59e/guestbook';
+const apiUrl = 'https://us-south.functions.appdomain.cloud/api/v1/web/ded88c72-ac43-45d2-8e0a-2c73887ba66b/guestbook';
 const guestbook = {
   get() {
     return $.ajax({
